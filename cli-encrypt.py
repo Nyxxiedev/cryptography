@@ -6,7 +6,7 @@ try:
     filename = 'key.key'
     # open the file and read whats inside
     with open(filename, 'rb') as do:
-        # save the contents to a file
+        # read the content from the file and save to variable
         key = do.read()
 # if that doesnt work
 except FileNotFoundError:
@@ -16,7 +16,7 @@ except FileNotFoundError:
     file = open('key.key', 'wb')
     # write the key to the file
     file.write(key)
-    # cl;ose the file
+    # close the file
     file.close()
 # use the key and save it to a variable again? i dont actrually know what this is doing i just know I have to do it yk?
 fer = Fernet(key)
